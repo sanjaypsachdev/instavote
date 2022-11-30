@@ -5,24 +5,18 @@ resources:
 patchesStrategicMerge:
 - deployment.yaml
 - service.yaml
-
 replicas:
 - name: vote
   count: 7
-
 images:
 - name: schoolofdevops/vote
-  newTag: v8 # {"$imagepolicy": "flux-system:vote:tag"}
-
+  newTag: main-bfb412c8-1669767331 # {"$imagepolicy": "flux-system:vote:tag"}
 namespace: instavote
-
 commonLabels:
   project: instavote
   env: staging
-
 commonAnnotations:
   supported-by: "sre@example.com"
-
 configMapGenerator:
 - name: vote-options
   envs:
