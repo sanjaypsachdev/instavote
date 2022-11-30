@@ -8,7 +8,7 @@ replicas:
   count: 1
 
 images:
-- name: schoolofdevops/worker
+- name: sanjaypsachdev/worker
   newTag: latest
 
 namespace: instavote
