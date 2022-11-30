@@ -10,7 +10,7 @@ spec:
   template:
     spec:
       containers:
-      - image: schoolofdevops/vote:v3
+      - image: sanjaypsachdev/vote:v3
         name: vote
         envFrom:
         - configMapRef:
